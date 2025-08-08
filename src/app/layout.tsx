@@ -1,6 +1,7 @@
 import './globals.css';
-import Header from '@/components/Header'; // 👈 жолды қос
+import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import WhatsAppButton from '@/components/WhatsApp'; // 👈 WhatsApp иконка компоненті
 
 export const metadata = {
   title: 'KhanMedia.kz',
@@ -11,9 +12,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ru">
       <body>
-        <Header /> {/* 👈 Header компоненті */}
+        <Header />
         {children}
         <Footer />
+        <WhatsAppButton /> {/* 👈 Иконка барлық бетте көрінеді */}
       </body>
     </html>
   );

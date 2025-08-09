@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const categories = [
   { id: 'all', title: 'Все проекты' },
@@ -11,26 +12,28 @@ const categories = [
   { id: 'graphics', title: 'Графика' },
 ];
 
-const imagesByCategory: { [key: string]: string[] } = {
+// Әр суретке сілтеме қостық
+const imagesByCategory: { [key: string]: { src: string; url: string; slug: string }[] } = {
   all: [
-    'https://images.unsplash.com/photo-1605460375648-278bcbd579a6',
-    'https://images.unsplash.com/photo-1506765515384-028b60a970df',
-    'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e',
-    'https://images.unsplash.com/photo-1498050108023-c5249f4df085',
+    { src: 'https://images.unsplash.com/photo-1605460375648-278bcbd579a6', url: '/projects/alpha', slug: 'alpha' },
+    { src: 'https://images.unsplash.com/photo-1506765515384-028b60a970df', url: '/projects/beta', slug: 'beta' },
+    { src: 'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e', url: '/projects/gamma', slug: 'gamma' },
+    { src: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085', url: '/projects/delta', slug: 'delta' },
   ],
   motion: [
-    'https://images.unsplash.com/photo-1605460375648-278bcbd579a6',
+    { src: 'https://images.unsplash.com/photo-1605460375648-278bcbd579a6', url: '/projects/alpha', slug: 'alpha' },
   ],
   vfx: [
-    'https://images.unsplash.com/photo-1506765515384-028b60a970df',
+    { src: 'https://images.unsplash.com/photo-1506765515384-028b60a970df', url: '/projects/beta', slug: 'beta' },
   ],
   branding: [
-    'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e',
+    { src: 'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e', url: '/projects/gamma', slug: 'gamma' },
   ],
   graphics: [
-    'https://images.unsplash.com/photo-1612837017391-3e82eaaf31dc',
+    { src: 'https://images.unsplash.com/photo-1612837017391-3e82eaaf31dc', url: '/projects/delta', slug: 'delta' },
   ],
 };
+
 
 export default function ProjectCategoryTabs() {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -38,6 +41,7 @@ export default function ProjectCategoryTabs() {
 
   return (
     <div>
+      {/* Категория батырмалары */}
       <div className="flex flex-wrap justify-center gap-4 mb-8">
         {categories.map((category) => (
           <button
@@ -54,14 +58,12 @@ export default function ProjectCategoryTabs() {
         ))}
       </div>
 
+      {/* Суреттер торы */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {images.map((src, index) => (
-          <div
-            key={index}
-            className="relative group rounded-lg overflow-hidden shadow"
-          >
+        {images.map((item, index) => (
+          <Link key={index} href={`/projects/${item.slug}`} className="relative group rounded-lg overflow-hidden shadow">
             <Image
-              src={src}
+              src={item.src}
               alt={`Проект ${index + 1}`}
               width={800}
               height={600}
@@ -72,7 +74,7 @@ export default function ProjectCategoryTabs() {
                 Проект {index + 1}
               </span>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

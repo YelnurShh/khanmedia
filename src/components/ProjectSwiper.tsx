@@ -34,7 +34,7 @@ export default function ProjectSwiper({ images }: { images: string[] }) {
                 className="w-full h-64 object-cover group-hover:brightness-75 transition duration-300"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center opacity-0 group-hover:opacity-100 transition duration-300 py-2">
-                Жоба {index + 1}
+                Проект {index + 1}
               </div>
             </div>
           </SwiperSlide>

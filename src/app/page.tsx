@@ -70,7 +70,7 @@ export default function Home() {
 
               <Link
                 href={project.link}
-                className="text-xl font-medium underline underline-offset-4 hover:text-blue-600 transition-colors duration-300 block"
+                className="text-xl font-medium hover:text-gray-500 transition-colors duration-300 block"
               >
                 {project.name}
               </Link>

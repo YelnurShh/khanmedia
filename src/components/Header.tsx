@@ -28,7 +28,7 @@ export default function Header() {
         {/* Desktop nav */}
         <nav className="hidden md:flex space-x-6">
   <Link href="/" className="text-gray-600 hover:text-gray-900 text-lg">Главная</Link>
-  <Link href="/about" className="text-gray-600 hover:text-gray-900 text-lg">Обо мне</Link>
+  <Link href="/about" className="text-gray-600 hover:text-gray-900 text-lg">О нас</Link>
   <Link href="/projects" className="text-gray-600 hover:text-gray-900 text-lg">Проекты</Link>
   <Link href="/motionDesign" className="text-gray-600 hover:text-gray-900 text-lg">Моушен Дизайн</Link>
 </nav>
@@ -43,7 +43,7 @@ export default function Header() {
       >
         <nav className="flex flex-col items-center px-4 py-4 space-y-4 bg-white">
           <Link href="/" className="text-gray-600 hover:text-gray-900 text-lg">Главная</Link>
-  <Link href="/about" className="text-gray-600 hover:text-gray-900 text-lg">Обо мне</Link>
+  <Link href="/about" className="text-gray-600 hover:text-gray-900 text-lg">О нас</Link>
   <Link href="/projects" className="text-gray-600 hover:text-gray-900 text-lg">Проекты</Link>
   <Link href="/motionDesign" className="text-gray-600 hover:text-gray-900 text-lg">Моушен Дизайн</Link>
 

@@ -7,28 +7,40 @@ import Footer from '@/components/Footer';
 export default function Home() {
   const projects = [
     {
-      name: 'Project Alpha',
+      name: 'Otbasy',
       link: '/projects/alpha',
-      image1: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f',
-      image2: 'https://images.unsplash.com/photo-1499346030926-9a72daac6c63?auto=format&fit=crop&w=800&q=80',
+      image1: '/projects/otbasy.jpg',
+      image2: '/projects/otbasy2.jpg',
     },
     {
-      name: 'Project Beta',
+      name: 'Changan',
       link: '/projects/beta',
-      image1: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085',
-      image2: 'https://images.unsplash.com/photo-1537498425277-c283d32ef9db',
+      image1: '/projects/changan.jpg',
+      image2: '/projects/changan2.jpg',
     },
     {
-      name: 'Project Gamma',
+      name: 'Citadel',
       link: '/projects/gamma',
-      image1: 'https://images.unsplash.com/photo-1593642532973-d31b6557fa68',
-      image2: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80',
+      image1: '/projects/cita.jpg',
+      image2: '/projects/cita2.jpg',
     },
     {
-      name: 'Project Delta',
+      name: 'AYU BURGER',
       link: '/projects/delta',
-      image1: 'https://images.unsplash.com/photo-1518770660439-4636190af475',
-      image2: 'https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80',
+      image1: '/projects/ayu.jpg',
+      image2: '/projects/ayu2.jpg',
+    },
+    {
+      name: 'NUR BOLASHAK',
+      link: '/projects/nur',
+      image1: '/projects/nur.jpg',
+      image2: '/projects/nur2.jpg',
+    },
+    {
+      name: "THE GENTLEMEN'S",
+      link: '/projects/get',
+      image1: '/projects/get.jpg',
+      image2: '/projects/get2.jpg',
     },
   ];
 

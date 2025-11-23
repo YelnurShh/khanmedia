@@ -32,7 +32,6 @@ export default function Header() {
           <Link href="/about" className="text-gray-600 hover:text-gray-900 text-lg">О нас</Link>
           <Link href="/projects" className="text-gray-600 hover:text-gray-900 text-lg">Проекты</Link>
           <Link href="/motionDesign" className="text-gray-600 hover:text-gray-900 text-lg">Моушен Дизайн</Link>
-          <Link href="/privacy" className="text-gray-600 hover:text-gray-900 text-lg">Политика конфиденциальности</Link>
         </nav>
       </div>
 
@@ -47,7 +46,6 @@ export default function Header() {
           <Link href="/about" className="text-gray-600 hover:text-gray-900 text-lg">О нас</Link>
           <Link href="/projects" className="text-gray-600 hover:text-gray-900 text-lg">Проекты</Link>
           <Link href="/motionDesign" className="text-gray-600 hover:text-gray-900 text-lg">Моушен Дизайн</Link>
-          <Link href="/privacy" className="text-gray-600 hover:text-gray-900 text-lg">Политика конфиденциальности</Link>
         </nav>
       </div>
     </header>

@@ -15,7 +15,7 @@ const categories = [
 // Әр суретке сілтеме қостық
 const imagesByCategory: { [key: string]: { src: string; url: string; slug: string }[] } = {
   all: [
-    { src: 'https://images.unsplash.com/photo-1605460375648-278bcbd579a6', url: '/projects/alpha', slug: 'alpha' },
+    { src: '/projects/otbasy.jpg', url: '/projects/alpha', slug: 'alpha' },
     { src: 'https://images.unsplash.com/photo-1506765515384-028b60a970df', url: '/projects/beta', slug: 'beta' },
     { src: 'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e', url: '/projects/gamma', slug: 'gamma' },
     { src: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085', url: '/projects/delta', slug: 'delta' },

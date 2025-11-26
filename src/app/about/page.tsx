@@ -1,13 +1,6 @@
 import ProjectSwiper from '@/components/ProjectSwiper';
 
 export default function AboutPage() {
-  const projectImages = [
-    'https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80',
-    'https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80',
-    'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
-    'https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=800&q=80',
-    'https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=800&q=80',
-  ];
 
   return (
     <main className="max-w-7xl mx-auto px-4 py-20">
@@ -25,7 +18,25 @@ export default function AboutPage() {
 
       {/* Свайпер бөлімі */}
       <section className="mb-20">
-        <ProjectSwiper images={projectImages} />
+        <ProjectSwiper
+  images={[
+    '/projects/otbasy.jpg',
+    '/projects/changan.jpg',
+    '/projects/cita.jpg',
+    '/projects/ayu.jpg',
+    '/projects/nur.jpg',
+    '/projects/get.jpg',
+  ]}
+  links={[
+    '/projects/alpha',
+    '/projects/beta',
+    '/projects/gamma',
+    '/projects/delta',
+    '/projects/nur',
+    '/projects/get',
+  ]}
+/>
+
       </section>
 
       {/* Статистика */}

@@ -16,21 +16,23 @@ const categories = [
 const imagesByCategory: { [key: string]: { src: string; url: string; slug: string }[] } = {
   all: [
     { src: '/projects/otbasy.jpg', url: '/projects/alpha', slug: 'alpha' },
-    { src: 'https://images.unsplash.com/photo-1506765515384-028b60a970df', url: '/projects/beta', slug: 'beta' },
-    { src: 'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e', url: '/projects/gamma', slug: 'gamma' },
-    { src: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085', url: '/projects/delta', slug: 'delta' },
+    { src: '/projects/changan.jpg', url: '/projects/beta', slug: 'beta' },
+    { src: '/projects/cita.jpg', url: '/projects/gamma', slug: 'gamma' },
+    { src: '/projects/ayu.jpg', url: '/projects/delta', slug: 'delta' },
+    { src: '/projects/nur.jpg', url: '/projects/nur', slug: 'nur' },
+    { src: '/projects/get.jpg', url: '/projects/get', slug: 'get' },
   ],
   motion: [
-    { src: 'https://images.unsplash.com/photo-1605460375648-278bcbd579a6', url: '/projects/alpha', slug: 'alpha' },
+    { src: '/projects/otbasy.jpg', url: '/projects/alpha', slug: 'alpha' },
   ],
   vfx: [
-    { src: 'https://images.unsplash.com/photo-1506765515384-028b60a970df', url: '/projects/beta', slug: 'beta' },
+    { src: '/projects/changan.jpg', url: '/projects/beta', slug: 'beta' },
   ],
   branding: [
-    { src: 'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e', url: '/projects/gamma', slug: 'gamma' },
+    { src: '/projects/cita.jpg', url: '/projects/gamma', slug: 'gamma' },
   ],
   graphics: [
-    { src: 'https://images.unsplash.com/photo-1612837017391-3e82eaaf31dc', url: '/projects/delta', slug: 'delta' },
+    { src: '/projects/ayu.jpg', url: '/projects/delta', slug: 'delta' },
   ],
 };
 
@@ -38,6 +40,15 @@ const imagesByCategory: { [key: string]: { src: string; url: string; slug: strin
 export default function ProjectCategoryTabs() {
   const [activeCategory, setActiveCategory] = useState('all');
   const images = imagesByCategory[activeCategory];
+
+  const projectNames = [
+    'OTBASY',
+    'CHANGAN',
+    'CITADEL',
+    'AYU BURGER',
+    'NUR BOLASHAK',
+    "THE GENTLEMEN'S",
+  ];
 
   return (
     <div>
@@ -69,9 +80,9 @@ export default function ProjectCategoryTabs() {
               height={600}
               className="w-full h-auto object-cover transition duration-300 group-hover:brightness-75"
             />
-            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 mt-45">
               <span className="text-white text-lg font-semibold text-center px-4">
-                Проект {index + 1}
+                {projectNames[index]}
               </span>
             </div>
           </Link>

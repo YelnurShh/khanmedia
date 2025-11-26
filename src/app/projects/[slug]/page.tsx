@@ -11,7 +11,7 @@ type ProjectData = {
 
 const projects: Record<string, ProjectData> = {
   alpha: {
-    name: "Otbasy",
+    name: "OTBASY",
     category: "Motion and Graphic design",
     description:
       "Бұл жоба клиенттің брендін жаңғырту үшін жасалған моушен-дизайн және анимацияны қамтиды.",
@@ -20,7 +20,7 @@ const projects: Record<string, ProjectData> = {
   },
 
   beta: {
-    name: "Changan",
+    name: "CHANGAN",
     category: "Motion and Graphic design",
     description:
       "VFX технологиялары арқылы түсірілім материалдарын толықтыру және жақсарту жобасы.",
@@ -37,7 +37,7 @@ const projects: Record<string, ProjectData> = {
   },
 
   gamma: {
-    name: "Citadel",
+    name: "CITADEL",
     category: "Брендинг",
     description:
       "Брендтің визуалды айдентикасын құру, логотип, түстер палитрасы және бренд-гайд.",
@@ -124,42 +124,6 @@ const projects: Record<string, ProjectData> = {
       '/projects/get8.jpg',
     ],
     team: ["Айжан", "Ерлан", "Марат"],
-  },
-
-  "agriculture-expo": {
-    name: "Agriculture Expo",
-    category: "VFX",
-    description:
-      "VFX технологиялары арқылы түсірілім материалдарын толықтыру және жақсарту жобасы.",
-    images: [
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-      "https://images.unsplash.com/photo-1537498425277-c283d32ef9db",
-    ],
-    team: ["Жанар", "Тимур"],
-  },
-
-  "modern-office": {
-    name: "Modern Office Interior",
-    category: "Брендинг",
-    description:
-      "Брендтің визуалды айдентикасын құру, логотип, түстер палитрасы және бренд-гайд.",
-    images: [
-      "https://images.unsplash.com/photo-1593642532973-d31b6557fa68",
-      "https://images.unsplash.com/photo-1570129477492-45c003edd2be",
-    ],
-    team: ["Айбек", "Сауле", "Арман"],
-  },
-
-  "city-lights": {
-    name: "City Lights Photography",
-    category: "Графика",
-    description:
-      "Графикалық иллюстрациялар, инфографика және визуалды материалдар дайындау.",
-    images: [
-      "https://images.unsplash.com/photo-1518770660439-4636190af475",
-      "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
-    ],
-    team: ["Дина", "Болат"],
   },
 };
 

@@ -5,8 +5,7 @@ import WhatsAppButton from '@/components/WhatsApp';
 import { Montserrat } from "next/font/google";  // 👈 Шрифт импорт
 
 export const metadata = {
-  title: 'KhanMedia.kz',
-  description: "Khan's website",
+  title: 'KhanMedia',
   icons: {
     icon: '/favicon.ico'
   }

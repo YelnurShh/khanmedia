@@ -7,35 +7,35 @@ export default function BlogPage() {
   const posts = [
   {
     id: 1,
-    slug: "1688-jana-post",
-    title: "1688 | Jana post",
+    slug: "alpha",
+    title: "OTBASY",
     date: "24.02.2025",
     timeAgo: "5 months ago",
-    image: "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80",
+    image: "/projects/otbasy.jpg",
   },
   {
     id: 2,
-    slug: "agriculture-expo", // ✅ қосу керек
-    title: "Agriculture Expo",
+    slug: "beta", // ✅ қосу керек
+    title: "CHANGAN",
     date: "12.01.2025",
     timeAgo: "6 months ago",
-    image: "https://images.unsplash.com/photo-1499346030926-9a72daac6c63?auto=format&fit=crop&w=800&q=80",
+    image: "/projects/changan.jpg",
   },
   {
     id: 3,
-    slug: "modern-office", // ✅ қосу керек
-    title: "Modern Office Interior",
+    slug: "gamma", // ✅ қосу керек
+    title: "CITADEL",
     date: "05.12.2024",
     timeAgo: "8 months ago",
-    image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80",
+    image: "/projects/cita.jpg",
   },
   {
     id: 4,
-    slug: "city-lights", // ✅ қосу керек
-    title: "City Lights Photography",
+    slug: "delta", // ✅ қосу керек
+    title: "AYU BURGER",
     date: "20.11.2024",
     timeAgo: "9 months ago",
-    image: "https://images.unsplash.com/photo-1499346030926-9a72daac6c63?auto=format&fit=crop&w=800&q=80",
+    image: "/projects/ayu.jpg",
   },
 ];
 

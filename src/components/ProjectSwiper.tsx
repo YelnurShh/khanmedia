@@ -7,8 +7,24 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
-export default function ProjectSwiper({ images }: { images: string[] }) {
+export default function ProjectSwiper({
+  images,
+  links,
+}: {
+  images: string[];
+  links: string[];
+}) {
+  const projectNames = [
+    'OTBASY',
+    'CHANGAN',
+    'CITADEL',
+    'AYU BURGER',
+    'NUR BOLASHAK',
+    "THE GENTLEMEN'S",
+  ];
+
   return (
     <div className="w-full">
       <Swiper
@@ -25,18 +41,23 @@ export default function ProjectSwiper({ images }: { images: string[] }) {
       >
         {images.map((url, index) => (
           <SwiperSlide key={index}>
-            <div className="relative group rounded-xl overflow-hidden shadow-lg">
-              <Image
-                src={url}
-                alt={`Project ${index + 1}`}
-                width={800}
-                height={600}
-                className="w-full h-64 object-cover group-hover:brightness-75 transition duration-300"
-              />
-              <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center opacity-0 group-hover:opacity-100 transition duration-300 py-2">
-                Проект {index + 1}
+            <Link href={links[index]}>
+              <div className="relative group rounded-xl overflow-hidden shadow-lg cursor-pointer">
+                <Image
+                  src={url}
+                  alt={projectNames[index]}
+                  width={800}
+                  height={600}
+                  className="w-full h-64 object-cover group-hover:brightness-75 transition duration-300"
+                />
+
+                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 
+                                text-white text-center opacity-0 group-hover:opacity-100 
+                                transition duration-300 py-2">
+                  {projectNames[index]}
+                </div>
               </div>
-            </div>
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>
